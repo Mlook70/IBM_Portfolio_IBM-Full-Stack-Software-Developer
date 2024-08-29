@@ -1,0 +1,76 @@
+/* Basic Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-color: #1a1a1a;
+    color: #eaeaea;
+    line-height: 1.6;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+  }
+  
+  .header-container img {
+    margin-top: 10px;
+  }
+  
+  .about-me, .skills, .projects, .recommendations {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .about-me h2, .skills h2, .projects h2, .recommendations h2 {
+    margin-bottom: 15px;
+    color: #ffd700;
+  }
+  
+  ul {
+    list-style: none;
+    margin-top: 15px;
+  }
+  
+  ul li {
+    margin: 10px 0;
+  }
+  
+  .icons img {
+    margin: 10px;
+  }
+  
+  .skills-category {
+    margin-bottom: 30px;
+  }
+  
+  .project-list .project {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 8px;
+  }
+  
+  .connect-icons img {
+    margin: 10px;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #eaeaea;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
