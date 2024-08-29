@@ -26,6 +26,7 @@
 
 <!-- About Me Section -->
 <section id="about" class="about-me">
+<img src="./images/profile.png" alt="Profile Image" class="profile-image">
 <h2>I'm Abdulmalek Akel, a full-time full-stack freelance developer 👨‍💻 working remotely since 2021 🚀</h2>
 <ul>
     <li>🔭 I’m currently working on my apps</li>
@@ -116,26 +117,32 @@
     <img src="./images/ABDULMALEK.png" alt="Portfolio" class="project-image"/>
     <p>I'm Abdulmalek Akel, a Full Stack Software Engineer with experience in Website, Mobile, and Software development. Check out my projects and skills on my portfolio website.</p>
     </div>
-    <div class="project">
-    <h3><a href="https://sun-light-git-main-mlook70s-projects.vercel.app/calendar">Sun Light Car Rental ERP</a></h3>
-    <img src="./images/ERP.png" alt="Sun Light Car Rental ERP" class="project-image"/>
-    <p>Sun Light Car Rental ERP is a comprehensive management system for car rentals. It includes features for managing reservations, car details, and customer information with a user-friendly calendar interface.</p>
-    </div>
-    <div class="project">
-    <h3><a href="https://ez-food-sandy.vercel.app/">EZGET Food App</a></h3>
-    <img src="./images/EZGET.png" alt="EZGET Food App" class="project-image"/>
-    <p>EZGET is a food app that helps foodies easily find and share meals from around the world. Join the community to explore and taste various dishes.</p>
-    </div>
 </div>
 </section>
 
 <!-- Recommendations Section -->
 <section id="recommendations" class="recommendations">
-<h2>📫 Connect with me</h2>
-<div class="connect-icons">
-    <a href="https://www.linkedin.com/in/abdulmalek-akel" target="_blank"><img src="https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-    <a href="https://github.com/Mlook70" target="_blank"><img src="https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-    <a href="https://abdulmalek-git-main-mlook70s-projects.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/portfolio-%23000000.svg?&style=for-the-badge&logo=github&logoColor=white" alt="Portfolio" /></a>
+<h2>Recommendations</h2>
+<div class="recommendations-list">
+    <!-- Existing recommendations -->
+    <div class="recommendation">
+    <p>"Abdulmalek's expertise in web development is outstanding. He transformed our vision into reality with precision and creativity."</p>
+    <span>- Client A</span>
+    </div>
+    <div class="recommendation">
+    <p>"Highly recommend Abdulmalek for any software project. His attention to detail and problem-solving skills are top-notch."</p>
+    <span>- Client B</span>
+    </div>
+    <div class="recommendation">
+    <p>"Working with Abdulmalek was a breeze. He understood our needs and delivered a product that exceeded our expectations."</p>
+    <span>- Client C</span>
+    </div>
+    <!-- Form to add new recommendation -->
+    <form id="recommendation-form">
+    <label for="new-recommendation">Leave a Recommendation</label>
+    <textarea id="new-recommendation" rows="4" placeholder="Your recommendation..."></textarea>
+    <button type="button" onclick="addRecommendation()">Submit</button>
+    </form>
 </div>
 </section>
 
@@ -145,5 +152,19 @@
 </footer>
 
 <script src="scripts.js"></script>
+<script>
+function addRecommendation() {
+    const textarea = document.getElementById('new-recommendation');
+    const recommendationText = textarea.value.trim();
+    if (recommendationText) {
+    const newRecommendation = document.createElement('div');
+    newRecommendation.classList.add('recommendation');
+    newRecommendation.innerHTML = `<p>${recommendationText}</p><span>- New User</span>`;
+    document.querySelector('.recommendations-list').appendChild(newRecommendation);
+    textarea.value = '';
+    alert('Thank you for your recommendation!');
+    }
+}
+</script>
 </body>
 </html>

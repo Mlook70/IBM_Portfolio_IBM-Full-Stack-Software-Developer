@@ -14,7 +14,7 @@
   
   .navbar {
     background-color: #1e1e1e;
-    padding: 10px 20px; /* Adjusted for smaller size */
+    padding: 10px 20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -26,18 +26,18 @@
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   
   .navbar ul li {
-    margin: 0 10px; /* Reduced margin for smaller size */
+    margin: 0 10px;
   }
   
   .navbar ul li a {
     color: #e0e0e0;
     text-decoration: none;
-    font-size: 14px; /* Uniform font size for all navbar items */
+    font-size: 14px;
     transition: color 0.3s ease;
   }
   
@@ -46,24 +46,24 @@
   }
   
   .navbar-name a {
-    font-size: 14px; /* Ensures the name has the same size as other links */
+    font-size: 14px;
     color: #e0e0e0;
     text-decoration: none;
   }
   
   .header {
     text-align: center;
-    padding: 50px 20px; /* Adjusted for smaller size */
+    padding: 50px 20px;
     background-color: #2c2c2c;
     margin-top: 50px;
   }
   
   .header-container img {
-    width: 200px; /* Smaller size for the typing effect */
+    width: 200px;
   }
   
   .about-me, .skills, .projects, .recommendations {
-    max-width: 800px; /* Reduced width for smaller size */
+    max-width: 800px;
     margin: 60px auto;
     padding: 20px;
     background-color: #1e1e1e;
@@ -73,14 +73,21 @@
   
   .about-me h2, .skills h2, .projects h2, .recommendations h2 {
     margin-bottom: 10px;
-    color: #a35dff; /* Purple accent color */
-    font-size: 18px; /* Slightly smaller font size */
+    color: #a35dff;
+    font-size: 18px;
+  }
+  
+  .profile-image {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
   }
   
   ul {
     list-style: none;
     margin-top: 10px;
-    padding-left: 20px; /* Added padding for better text alignment */
+    padding-left: 20px;
   }
   
   ul li {
@@ -90,7 +97,7 @@
   
   .icons img {
     margin: 8px;
-    width: 30px; /* Smaller size for skill icons */
+    width: 30px;
     height: auto;
     transition: transform 0.3s ease;
   }
@@ -100,7 +107,7 @@
   }
   
   .skills-category {
-    margin-bottom: 20px; /* Reduced margin for smaller size */
+    margin-bottom: 20px;
   }
   
   .project-list .project {
@@ -112,16 +119,16 @@
   }
   
   .project h3 {
-    font-size: 16px; /* Slightly smaller font size */
+    font-size: 16px;
   }
   
   .project p {
-    font-size: 14px; /* Consistent font size */
+    font-size: 14px;
   }
   
   .project-image {
     width: 100%;
-    max-width: 500px; /* Reduced max-width for smaller size */
+    max-width: 500px;
     height: auto;
     border-radius: 5px;
     margin-top: 10px;
@@ -129,7 +136,7 @@
   
   .connect-icons img {
     margin: 8px;
-    width: 120px; /* Smaller size for connect icons */
+    width: 120px;
     transition: transform 0.3s ease;
   }
   
@@ -146,6 +153,47 @@
     bottom: 0;
     width: 100%;
     margin-top: 30px;
-    font-size: 12px; /* Smaller font size for the footer */
+    font-size: 12px;
+  }
+  
+  .recommendation {
+    background-color: #2c2c2c;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+  }
+  
+  .recommendations-list {
+    margin-top: 20px;
+  }
+  
+  #recommendation-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #recommendation-form textarea {
+    resize: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  #recommendation-form button {
+    padding: 10px;
+    background-color: #a35dff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #recommendation-form button:hover {
+    background-color: #8e4de1;
   }
   
