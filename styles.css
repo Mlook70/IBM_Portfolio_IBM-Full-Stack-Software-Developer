@@ -7,70 +7,145 @@
   }
   
   body {
-    background-color: #1a1a1a;
-    color: #eaeaea;
+    background-color: #121212;
+    color: #e0e0e0;
     line-height: 1.6;
+  }
+  
+  .navbar {
+    background-color: #1e1e1e;
+    padding: 10px 20px; /* Adjusted for smaller size */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar ul li {
+    margin: 0 10px; /* Reduced margin for smaller size */
+  }
+  
+  .navbar ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 14px; /* Uniform font size for all navbar items */
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #a35dff; /* Purple color on hover */
+  }
+  
+  .navbar-name a {
+    font-size: 14px; /* Ensures the name has the same size as other links */
+    color: #e0e0e0;
+    text-decoration: none;
   }
   
   .header {
     text-align: center;
-    padding: 20px;
-    background-color: #333;
+    padding: 50px 20px; /* Adjusted for smaller size */
+    background-color: #2c2c2c;
+    margin-top: 50px;
   }
   
   .header-container img {
-    margin-top: 10px;
+    width: 200px; /* Smaller size for the typing effect */
   }
   
   .about-me, .skills, .projects, .recommendations {
-    max-width: 1000px;
-    margin: 40px auto;
+    max-width: 800px; /* Reduced width for smaller size */
+    margin: 60px auto;
     padding: 20px;
-    background-color: #2b2b2b;
+    background-color: #1e1e1e;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   }
   
   .about-me h2, .skills h2, .projects h2, .recommendations h2 {
-    margin-bottom: 15px;
-    color: #ffd700;
+    margin-bottom: 10px;
+    color: #a35dff; /* Purple accent color */
+    font-size: 18px; /* Slightly smaller font size */
   }
   
   ul {
     list-style: none;
-    margin-top: 15px;
+    margin-top: 10px;
+    padding-left: 20px; /* Added padding for better text alignment */
   }
   
   ul li {
-    margin: 10px 0;
+    margin: 8px 0;
+    font-size: 14px;
   }
   
   .icons img {
-    margin: 10px;
+    margin: 8px;
+    width: 30px; /* Smaller size for skill icons */
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .icons img:hover {
+    transform: scale(1.1);
   }
   
   .skills-category {
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Reduced margin for smaller size */
   }
   
   .project-list .project {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #333;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #2c2c2c;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project h3 {
+    font-size: 16px; /* Slightly smaller font size */
+  }
+  
+  .project p {
+    font-size: 14px; /* Consistent font size */
+  }
+  
+  .project-image {
+    width: 100%;
+    max-width: 500px; /* Reduced max-width for smaller size */
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
   }
   
   .connect-icons img {
-    margin: 10px;
+    margin: 8px;
+    width: 120px; /* Smaller size for connect icons */
+    transition: transform 0.3s ease;
+  }
+  
+  .connect-icons img:hover {
+    transform: scale(1.1);
   }
   
   .footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
-    color: #eaeaea;
+    background-color: #2c2c2c;
+    color: #e0e0e0;
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 30px;
+    font-size: 12px; /* Smaller font size for the footer */
   }
   
